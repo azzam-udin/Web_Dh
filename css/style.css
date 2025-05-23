@@ -5,11 +5,18 @@ body {
     color: #444;
 }
 
-header {
+.header-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
+    background-color: #fec106;
+}
+
+.header-section .logo h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1;
 }
 
 .nav-links {
@@ -29,6 +36,10 @@ header {
     color: white;
     padding: 10px 20px;
     border-radius: 8px;
+}
+
+.hero-section {
+    background-color: #fec106;
 }
 
 .main {
@@ -55,6 +66,10 @@ header {
 
 /*  */
 /*  */
+
+.faq-section {
+    background-color: #f4eb82;
+}
 
 h1 {
     font-size: 48px;
@@ -85,6 +100,10 @@ p {
 
 /*  */
 /*  */
+
+.select-table-section {
+    background-color: white;
+}
 
 .center-container {
     display: flex;
@@ -135,6 +154,10 @@ select {
 
 /*  */
 /*  */
+
+.carousel-section {
+    background-color: #abe7c0;
+}
 
 .carousel-container {
     position: relative;
@@ -195,6 +218,10 @@ select {
 /*  */
 /*  */
 
+.footer-section {
+    background-color: #a5cdf3;
+}
+
 .info-group {
     display: flex;
     align-items: center;
@@ -214,4 +241,13 @@ select {
     font-size: 1.1rem;
     color: #444;
     text-align: center;
+}
+
+.header-section,
+.hero-section,
+.faq-section,
+.select-table-section,
+.carousel-section,
+.footer-section {
+  padding: 40px 20px;
 }
