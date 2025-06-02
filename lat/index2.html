@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daaru Hiraa</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="kosong"></div>
+    <header id="header">
+      <img src="" alt="logo" loading="lazy" />
+      <nav>
+        <ul>
+          <li style="background-color: #d0d0d0">
+            <a href="#aboutus"><b>Tentang Kami</b></a>
+          </li>
+          <li style="background-color: #f4eb82">
+            <a href="#exerciseprogram"><b>Program Kajian</b></a>
+          
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <aside>
+        <div class="top" onclick="goToTop()">
+          <i
+            class="far fa-hand-pointer"
+            style="color: white"
+            id="topButton"
+          ></i>
+        </div>
+        <div class="music-player">
+          <i class="fas fa-music" id="musicToggle"></i>
+          <audio id="backgroundMusic" loop>
+            <source src="audio/deha.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </aside>
+
+      <article>
+        <section class="welcome">
+          <div class="container">
+            <div class="kiri">
+              <h1>
+                <pre>
+          Selamat Datang
+          Di Website 
+          Pondok Mahasiswa 
+          Daaru Hiraa
+              </pre
+                >
+              </h1>
+            </div>
+            <div class="kanan">
+              <img
+                src=""
+                alt="Kajian Yang Terdiri dari Kajian Subuh, Maghrib dan isya"
+                style="max-width: 100%; height: auto"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <p>
+            Website Yang Bertujuan Untuk Menyediakan Informasi Tentang
+            Pembelajaran Pondok Mahasiswa Daaru Hiraa
+          </p>
+        </section>
+
+        <section class="profil" id="aboutus">
+          <h1>Tentang Kami</h1>
+          <p>
+            Daaru Hiraa adalah organisasi pendidikan yang berfokus pada
+            pembelajaran Kitab Aqidah, Adab serta Akhlak dan lain sebagainya. Selain itu Daaru Hiraa juga memberikan pengetahuan
+            terkait isi dari kitab-kitab yang dipelajari dan didiskusikan setiap
+            bulannya.
+          </p>
+        </section>
+
+        <section class="program" id="exerciseprogram">
+          <h1>Program Kajian</h1>
+          <ul>
+            <li>Kajian Aqidah</li>
+            <li>Kajian Adab</li>
+            <li>Kajian Akhlak</li>
+            <li>Tahsin Qur'an</li>
+            <li>Hadits</li>
+            <li>Fiqh</li>
+          </ul>
+        </section>
+
+    <script src="controller/home.js"></script>
+  </body>
+</html>
