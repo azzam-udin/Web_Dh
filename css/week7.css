@@ -84,6 +84,7 @@ header nav ul li:hover a {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -103,6 +104,14 @@ header nav ul li:nth-child(2) {
   animation-delay: 0.2s;
 }
 
+header nav ul li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+header nav ul li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -113,6 +122,7 @@ main {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -131,14 +141,18 @@ main {
 }
 
 .profil,
-.program {
+.program,
+.informasi,
+.topik {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .profil.is-visible,
-.program.is-visible {
+.program.is-visible,
+.informasi.is-visible,
+.topik.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -146,7 +160,12 @@ main {
 .profil h1,
 .profil p,
 .program h1,
-.program ul li {
+.program ul li,
+.informasi h1,
+.informasi p,
+.informasi table,
+.topik h1,
+.topik .berita li {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -154,7 +173,9 @@ main {
 
 .is-visible h1,
 .is-visible p,
-.is-visible ul li {
+.is-visible ul li,
+.is-visible table,
+.is-visible .berita li {
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.2s;
@@ -284,6 +305,175 @@ main {
   font-weight: bold;
 }
 
+.informasi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.informasi h1 {
+  text-align: center;
+  color: #2d4059;
+  font-size: 32pt;
+  padding-top: 20px;
+}
+
+.informasi p {
+  font-weight: bold;
+}
+
+.informasi select {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease-out 0.4s both;
+  /* Animasi saat muncul */
+}
+
+.informasi select:hover {
+  border-color: #009879;
+  /* Warna border saat hover */
+  box-shadow: 0 0 5px rgba(0, 151, 121, 0.5);
+  /* Bayangan saat hover */
+}
+
+.informasi select:focus {
+  outline: none;
+  /* Menghilangkan outline default */
+  border-color: #009879;
+  /* Warna border saat fokus */
+  box-shadow: 0 0 5px rgba(0, 151, 121, 0.5);
+  /* Bayangan saat fokus */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  font-family: "Ubuntu", sans-serif;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+
+.topik {
+  background-color: #f4eb82;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.topik h1 {
+  color: #2d4059;
+  font-size: 32pt;
+  margin-bottom: 20px;
+}
+
+.topik h3 {
+  color: #2d4059;
+  font-size: 24pt;
+  margin-bottom: 20px;
+}
+
+.topik .berita {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.topik .berita ul {
+  list-style: none;
+  padding: 0;
+}
+
+.topik .berita li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.topik .berita a {
+  text-decoration: none;
+}
+
+.topik .berita li:hover {
+  transform: scale(1.05);
+}
+
+.topik figure {
+  margin: 0;
+  padding: 0;
+}
+
+.topik img {
+  width: 300px;
+  height: 350px;
+}
+
+.topik figcaption {
+  padding: 10px;
+  font-size: 14pt;
+  color: #2d4059;
+}
+
 .top {
   display: flex;
   justify-content: center;
@@ -338,8 +528,92 @@ main {
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.1);
   }
 }
 
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 300px;
+  height: 350px;
+}
+
+.prev,
+.next {
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  margin-right: 150px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  margin-left: 150px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

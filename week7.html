@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daaru Hiraa</title>
+  <link rel="stylesheet" href="css/week7.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="kosong"></div>
+  <header id="header">
+    <img src="" alt="logo" loading="lazy" />
+    <nav>
+      <ul>
+        <li style="background-color: #d0d0d0">
+          <a href="#aboutus"><b>Tentang Kami</b></a>
+        </li>
+        <li style="background-color: #f4eb82">
+          <a href="#exerciseprogram"><b>Program Kajian</b></a>
+        </li>
+        <li style="background-color: #c499e1">
+          <a href="#exerciseinfo"><b>Informasi</b></a>
+        </li>
+        <li style="background-color: #f69d96">
+          <a href="#artikel"><b>Artikel</b></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <div class="top" onclick="goToTop()">
+        <i class="far fa-hand-pointer" style="color: white" id="topButton"></i>
+      </div>
+      <div class="music-player">
+        <i class="fas fa-music" id="musicToggle"></i>
+        <audio id="backgroundMusic" loop>
+          <source src="audio/deha.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </aside>
+
+    <article>
+      <section class="welcome">
+        <div class="container">
+          <div class="kiri">
+            <h1>
+              <pre>
+          Selamat Datang
+          Di Website 
+          Pondok Mahasiswa 
+          Daaru Hiraa
+              </pre>
+            </h1>
+          </div>
+          <div class="kanan">
+            <img src="" alt="Kajian Yang Terdiri dari Kajian Subuh, Maghrib dan isya"
+              style="max-width: 100%; height: auto" loading="lazy" />
+          </div>
+        </div>
+        <p>
+          Website Yang Bertujuan Untuk Menyediakan Informasi Tentang
+          Pembelajaran Pondok Mahasiswa Daaru Hiraa
+        </p>
+      </section>
+
+      <section class="profil" id="aboutus">
+        <h1>Tentang Kami</h1>
+        <p>
+          Daaru Hiraa adalah organisasi pendidikan yang berfokus pada
+          pembelajaran Kitab Aqidah, Adab serta Akhlak dan lain sebagainya. Selain itu Daaru Hiraa juga memberikan
+          pengetahuan
+          terkait isi dari kitab-kitab yang dipelajari dan didiskusikan setiap
+          bulannya.
+        </p>
+      </section>
+
+      <section class="program" id="exerciseprogram">
+        <h1>Program Kajian</h1>
+        <ul>
+          <li>Kajian Pagi</li>
+          <li>Kajian Malam</li>
+          <li>Kajian Umum</li>
+          <li>Kajian Kitab</li>
+          <li>Halaqah</li>
+          <li>STAIQ</li>
+        </ul>
+      </section>
+
+      <section class="informasi" id="exerciseinfo">
+        <h1>Informasi</h1>
+        <p>
+          Jadwal Kajian Daaru Hiraa diadakan tiap hari, pagi dan malam.
+        </p>
+        <br />
+        <br />
+        <h3>PILIH INFORMASI KAJIAN</h3>
+        <select id="kelasFilter" name="kelasFilter">
+          <option value="semua">Semua</option>
+          <option value="pagi">Kajian Pagi</option>
+          <option value="malam">Kajian Malam</option>
+          <option value="staiq">STAIQ</option>
+        </select>
+
+        <table class="styled-table">
+          <thead>
+            <tr style="text-align: center">
+              <th>Kajian</th>
+              <th>Hari</th>
+              <th>Jam</th>
+              <th>Infaq</th>
+            </tr>
+          </thead>
+          <tbody id="jadwalBody" style="text-align: center"></tbody>
+        </table>
+      </section>
+
+      <section class="topik" id="artikel">
+        <h1>Artikel</h1>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <a href="https://www.instagram.com/p/DJmKkzJJZ_4/?utm_source=ig_web_copy_link&igsh=MXd1ZjRnZHRjYnJtOQ==">
+              <img src="img/7buah.jpg" alt="7 buah" style="border: solid white 3px; border-radius: 5px"
+                loading="lazy" />
+            </a>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="https://www.instagram.com/p/DJjBE_WpOg1/?utm_source=ig_web_copy_link&igsh=Zm1od3MxbnFubjJi">
+              <img src="img/lanaa.jpg" alt="lanaa" style="border: solid white 3px; border-radius: 5px" loading="lazy" />
+            </a>
+          </div>
+
+          <div class="mySlides fade">
+            <a href="https://www.instagram.com/p/DI-XDSty7iy/?utm_source=ig_web_copy_link&igsh=ajlmMnl3eWxmbHJp">
+              <img src="img/3pesan.jpg" alt="3 pesan" style="border: solid white 3px; border-radius: 5px"
+                loading="lazy" />
+            </a>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </section>
+
+  </main>
+
+  <script src="controller/home.js"></script>
+</body>
+
+</html>
