@@ -5,7 +5,7 @@ const goToTop = () => {
 
 // Animasi scroll
 const animateOnScroll = () => {
-  const elements = document.querySelectorAll('.profil, .program, .informasi, .topik');
+  const elements = document.querySelectorAll('.profil, .program, .informasi, .topik, .media');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -100,7 +100,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Fungsi slideshow di bagian Galeri Foto dan Video
+// Fungsi slideshow di bagian artikel
 let slideIndex = 1;
 showSlides(slideIndex, 'topik');
 
@@ -108,7 +108,7 @@ showSlides(slideIndex, 'topik');
 function autoShowSlides() {
   slideIndex++;
   showSlides(slideIndex, 'topik');
-  setTimeout(autoShowSlides, 3000); // Ganti slide setiap 5 detik
+  setTimeout(autoShowSlides, 15000); // Ganti slide setiap 5 detik
 }
 
 autoShowSlides(); // Memanggil fungsi memulai slideshow otomatis
@@ -135,6 +135,43 @@ function showSlides(n, className) {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+}
+
+// Fungsi slideshow Galeri dan Video
+let slideIndexMedia = 1;
+showSlidesMedia(slideIndexMedia, 'media');
+
+// fungsi mengatur slideshow otomatis
+function autoShowSlidesMedia() {
+  slideIndexMedia++;
+  showSlidesMedia(slideIndexMedia, 'media');
+  setTimeout(autoShowSlidesMedia, 15000); // Ganti slide setiap 15 detik
+}
+
+// autoShowSlidesMedia(); // Memanggil fungsi memulai slideshow otomatis
+
+function plusSlidesMedia(n) {
+  showSlidesMedia(slideIndexMedia += n, 'media');
+}
+
+function currentSlideMedia(n) {
+  showSlidesMedia(slideIndexMedia = n, 'media');
+}
+
+function showSlidesMedia(n, className) {
+  let i;
+  let slides = document.querySelector('.' + className).getElementsByClassName("mySlides");
+  let dots = document.querySelector('.' + className).getElementsByClassName("dot");
+  if (n > slides.length) {slideIndexMedia = 1}
+  if (n < 1) {slideIndexMedia = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexMedia-1].style.display = "block";
+  dots[slideIndexMedia-1].className += " active";
 }
 
 const jadwalKelas = [
