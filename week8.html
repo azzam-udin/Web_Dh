@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daaru Hiraa</title>
-  <link rel="stylesheet" href="css/week7.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
@@ -32,6 +32,11 @@
         <li style="background-color: #f69d96">
           <a href="#artikel"><b>Artikel</b></a>
         </li>
+        <li style="background-color: #abe7c0">
+          <a href="#media"><b>Galeri dan Video</b></a>
+        </li>
+        <li style="background-color: #a5cdf3">
+          <a href="#kontak"><b>Kontak DH</b></a>
       </ul>
     </nav>
   </header>
@@ -160,7 +165,50 @@
         </div>
       </section>
 
+      <section class="media" id="media">
+        <h1>Galeri dan Video</h1>
+        <div class="slideshow-container media-slideshow">
+          <div class="mySlides fade">
+            <img src="img/Orii.jpg" alt="Kegiatan 1"
+              style="width: 300px; height: auto; border: solid white 3px; border-radius: 5px;" loading="lazy" />
+          </div>
+
+          <div class="mySlides fade">
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/lKC3SlqhyAE?si=mF0507boHE9GPRmj"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+              style="border: solid white 3px; border-radius: 5px"></iframe>
+          </div>
+
+          <a class="prev2" onclick="plusSlidesMedia(-1)">&#10094;</a>
+          <a class="next2" onclick="plusSlidesMedia(1)">&#10095;</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlideMedia(1)"></span>
+          <span class="dot" onclick="currentSlideMedia(2)"></span>
+        </div>
+      </section>
   </main>
+
+  <footer class="kontak" id="kontak">
+    <h1 id="Kontak">Kontak Kami</h1>
+    <ul>
+      <li>
+        <i class="fa-brands fa-instagram" style="font-size: 32pt"></i>
+        <a href="https://www.instagram.com/daaru_hiraa?utm_source=ig_web_button_share_sheet&igsh=Nmk4cDZmbHMyM3J2"
+          target="_blank">Instagram</a>
+      </li>
+      <li>
+        <i class="fab fa-whatsapp" style="font-size: 32pt"></i>
+        <a href="https://wa.me/6285159885179" target="_blank">WhatsApp</a>
+      </li>
+    </ul>
+    <br />
+    <p>Copyright &copy; 2025 Daaru Hiraa 2025</p>
+  </footer>
 
   <script src="controller/home.js"></script>
 </body>
