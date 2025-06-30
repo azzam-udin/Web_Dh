@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-direction: row;
   padding-left: 80px;
-  background-color: #fec106;
+  background-color: #2d4059;
   height: 150px;
   z-index: 1000;
   transition: all 0.3s ease;
@@ -120,6 +120,10 @@ header nav ul li:nth-child(6) {
   animation-delay: 0.6s;
 }
 
+header nav ul li:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -198,7 +202,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background-color: #fec106;
+  background-color: #2d4059;
   height: 80vh;
   flex-direction: column;
   padding-bottom: 20px;
@@ -260,7 +264,7 @@ main {
 }
 
 .profil {
-  background-color: #2d4059;
+  background-color: #fec106;
   height: 30vh;
   display: flex;
   flex-direction: column;
