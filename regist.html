@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Daaru Hiraa</title>
+    <link rel="stylesheet" href="css/regist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <section>
+        <div class="login-container">
+            <img src="img/logodh.png" alt="Logo DH"
+                style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+            <fieldset>
+                <legend>Action</legend>
+                <form method="POST" enctype="multipart/form-data" onsubmit="return false;">
+                    <ul>
+                        <!-- Form input fields -->
+                        <li>
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" name="nama" id="nama" placeholder="Masukan nama lengkap">
+                        </li>
+                        <li>
+                            <label for="tempatLahir">TTL</label>
+                            <input type="text" name="tempatLahir" id="tempatLahir"
+                                placeholder="Masukan tempat & tanggal lahir">
+                        </li>
+                        <li>
+                            <label for="alamat">Alamat</label>
+                            <input type="text" name="alamat" id="alamat" placeholder="Masukan alamat">
+                        </li>
+                        <li>
+                            <label for="noHp">No HP</label>
+                            <input type="number" name="noHp" id="noHp" placeholder="Masukan nomor HP">
+                        </li>
+                        <li>
+                            <label for="role">Role</label>
+                            <select name="role" id="role">
+                                <option value="" disabled selected>Pilih Role</option>
+                                <option value="Peserta">Peserta</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="username">Username/Email</label>
+                            <input type="email" name="username" id="username" placeholder="Masukan username/email">
+                        </li>
+                        <li>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" placeholder="Masukan password">
+                        </li>
+                        <li>
+                            <input name="submit" type="submit" value="Daftar">
+                        </li>
+                        <li class="aksi">
+                            <a href="login.html">Kembali Ke Halaman Login</a>
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </div>
+    </section>
+</body>
+
+</html>
