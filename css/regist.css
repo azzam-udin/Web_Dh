@@ -7,10 +7,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #2d4059;
-    overflow: hidden;
+    overflow: auto;
 }
 
 @keyframes fadeIn {
@@ -91,7 +90,12 @@ form label {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="text"],
+select,
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="file"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #F87113;
