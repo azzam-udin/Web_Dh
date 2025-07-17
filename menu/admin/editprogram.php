@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php include('../template/sidebar.php'); ?>
 
     <div class="container" style="margin-left: 270px; padding-top: 20px;">
-        <h2>Edit Program Pelatihan</h2>
+        <h2>Edit Program Kajian</h2>
 
         <?php if (!empty($errors)): ?>
             <div class="alert alert-danger">
