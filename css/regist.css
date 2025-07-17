@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background-color: #2d4059;
+    background-color: #FEC106;
     overflow: auto;
 }
 
@@ -35,7 +35,7 @@ body {
 }
 
 .login-container {
-    background-color: #FEC106;
+    background-color: #2d4059;
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -129,7 +129,7 @@ input[type="submit"]:hover {
 }
 
 fieldset {
-    color: brown;
+    color: rgb(255, 255, 255);
     border: #F87113 solid 3px;
     animation: fadeIn 0.5s ease-out 0.4s both;
 }
