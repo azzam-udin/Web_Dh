@@ -1,0 +1,131 @@
+/* Responsive styles */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  header nav ul {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .welcome {
+    height: auto;
+  }
+
+  .welcome .container {
+    flex-direction: column;
+  }
+
+  .welcome .kiri,
+  .welcome .kanan {
+    width: 100%;
+  }
+
+  .program li {
+    width: 80vw;
+  }
+
+  .styled-table {
+    min-width: 300px;
+  }
+
+  .top {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .topik .berita,
+  .topik .artikel {
+    flex-direction: column;
+  }
+
+  .topik img {
+    width: 50%;
+    height: auto;
+  }
+
+  .media .video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .top {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2em;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .music-player {
+    bottom: 60px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome h1 {
+    font-size: 24pt;
+  }
+
+  .welcome p {
+    font-size: 14pt;
+  }
+
+  .profil h1,
+  .program h1,
+  .informasi h1,
+  .topik h1,
+  .media h1,
+  footer.kontak h1 {
+    font-size: 24pt;
+  }
+
+  footer.kontak a {
+    font-size: 14pt;
+  }
+
+  .top {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .login-container {
+    width: 90%;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    font-size: 14px;
+  }
+
+  .music-player {
+    bottom: 50px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.8em;
+  }
+}

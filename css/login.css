@@ -9,8 +9,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #2d4059;
+    background-color: #FEC106;
     overflow: hidden;
+    /* #FEC106 */
 }
 
 @keyframes fadeIn {
@@ -36,7 +37,8 @@ body {
 }
 
 .login-container {
-    background-color: #FEC106;
+    /* #2d4059 */
+    background-color: #2d4059;
     padding: 20px;
     border-radius: 8px;
     width: 300px;
@@ -125,7 +127,7 @@ input[type="submit"]:hover {
 }
 
 fieldset {
-    color: brown;
+    color: rgb(255, 255, 255);
     border: #F87113 solid 3px;
     animation: fadeIn 0.5s ease-out 0.4s both;
 }
