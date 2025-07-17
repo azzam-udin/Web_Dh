@@ -42,7 +42,7 @@ $total_peserta = $result_peserta_count->fetch_assoc()['total_peserta'];
         
         <!-- Statistik Jumlah Peserta dan Guru -->
         <div class="row">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-12 mb-4">
                 <div class="card text-white bg-primary">
                     <div class="card-body">
                         <h5 class="card-title"><i class="fas fa-users"></i> Jumlah Peserta</h5>
